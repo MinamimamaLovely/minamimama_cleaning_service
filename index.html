@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minamimama Cleaning Service</title>
+    <meta name="description" content="Reliable housekeeping and babysitting services in Kawagoe,Saitama, serving areas along the Tobu Tojo, Fukutoshin, Yurakucho, and Seibu Ikebukuro lines. English communication available. 川越の家事代行・ベビーシッター 英語対応可能">
+    <meta name="keywords" content="Housekeeping Kawagoe, Babysitter Kawagoe, 川越 家事代行, 川越 ベビーシッ ター, 東武東上線 家事代行, 副都心線 ベビーシッター, 英語対応 家政婦">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .text-pink-primary { color: #D6336C; }
+        .bg-pink-light { background-color: #FFF0F6; }
+        .border-pink-soft { border-color: #FFDEEB; }
+        .bg-pink-gradient { background: linear-gradient(135deg, #FF6B9A 0%, #D6336C 100%); }
+
+        /* スケジュール埋め込み用スタイル */
+        .schedule-embed-wrapper {
+          width: 100%;
+          max-width: 1100px; /* お好みの最大幅 */
+          margin: 0 auto;
+          overflow: hidden;
+        }
+
+        .schedule-iframe {
+          width: 100%;
+          height: 700px;     /* カレンダーが収まる十分な高さ */
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* スマートフォン表示時の高さ調整 */
+        @media (max-width: 768px) {
+          .schedule-iframe {
+            height: 600px;
+          }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="image/logo.webp" alt="minamimama logo" class="w-16 h-16 object-contain">
+            <div>
+                <h1 class="text-pink-primary font-bold text-2xl leading-none">minamimama</h1>
+                <p class="text-gray-600 text-lg">Cleaning Service</p>
+            </div>
+        </div>
+        <div class="text-right">
+            <div class="flex items-center justify-end gap-2 text-pink-primary font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Contact Us
+            </div>
+            <p class="text-xs text-gray-500">Let's make your life easier!</p>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto grid md:grid-cols-2 items-center px-6 py-8 relative">
+        <div class="z-10">
+            <div class="inline-block bg-pink-gradient text-white px-6 py-2 rounded-r-full font-bold text-sm mb-6 -ml-6 shadow-md">
+                ENGLISH COMMUNICATION AVAILABLE!
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                Reliable Housekeeping <br>
+                <span class="text-pink-primary">& Babysitting</span> <br>
+                You Can Trust
+            </h2>
+            <p class="text-gray-600 text-lg mb-8">
+                Providing caring, reliable and high-quality <br>
+                support for your home and your family.
+            </p>
+
+            <div class="grid grid-cols-3 gap-4 text-center">
+                <div class="flex flex-col items-center">
+                    <span class="text-pink-primary text-2xl mb-2">★</span>
+                    <p class="text-[10px] font-bold text-gray-500 leading-tight">3 years of experience with a major home service company</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-pink-primary text-2xl mb-2">📖</span>
+                    <p class="text-[10px] font-bold text-gray-500 leading-tight">Featured in the company newsletter for excellent performance</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-pink-primary text-2xl mb-2">🏠</span>
+                    <p class="text-[10px] font-bold text-gray-500 leading-tight">2nd year as an independent service provider</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative mt-8 md:mt-0">
+            <img src="image/profile.webp" alt="Profile" class="w-full h-auto rounded-3xl relative z-0">
+            <div class="absolute bottom-10 right-0 bg-white/90 p-4 rounded-full shadow-lg border border-pink-100 text-center w-32 h-32 flex flex-col justify-center animate-pulse">
+                <p class="text-xs text-gray-500">Based in</p>
+                <p class="text-pink-primary font-bold text-lg leading-tight">Kawagoe, Japan</p>
+                <span class="text-pink-primary">♥</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4 px-6 py-10">
+        <div class="bg-pink-light rounded-xl p-4 flex flex-col items-center text-center">
+            <div class="w-10 h-10 bg-pink-primary text-white rounded-full flex items-center justify-center font-bold mb-2">¥</div>
+            <h4 class="font-bold text-xs uppercase text-gray-400">Price</h4>
+            <div class="text-pink-primary font-bold text-xl mt-1">Consultation required <span class="text-xs text-gray-400">/ hour</span></div>
+            <p class="text-[10px] text-gray-500 mt-1">+ transportation fee</p>
+            <div class="mt-2 bg-pink-200 text-pink-700 text-[9px] px-2 py-1 rounded-full font-bold">Minimum 3 hours per visit</div>
+        </div>
+        
+        <div class="bg-white border border-pink-soft rounded-xl p-4 flex flex-col items-center text-center">
+            <div class="text-pink-primary text-xl mb-1">📍</div>
+            <h4 class="font-bold text-[10px] uppercase text-gray-400">Service Area</h4>
+            <p class="text-[10px] font-bold mt-2">Within 60 minutes from Kawagoe</p>
+            <p class="text-[9px] text-gray-400 mt-1">Tobu Tojo Line, Yurakucho Line, Fukutoshin Line area</p>
+        </div>
+
+        <div class="bg-white border border-pink-soft rounded-xl p-4 flex flex-col items-center text-center">
+            <div class="text-pink-primary text-xl mb-1">💬</div>
+            <h4 class="font-bold text-[10px] uppercase text-gray-400">Language</h4>
+            <p class="text-[9px] text-gray-500 mt-2">Japanese: Basic level (May not understand some things.)</p>
+            <p class="text-[9px] font-bold text-gray-600 mt-1">Prefer to work with clients who can communicate in English.</p>
+            <p class="text-[9px] text-pink-500 font-bold mt-1">English communication: OK</p>
+        </div>
+
+        <div class="bg-white border border-pink-soft rounded-xl p-4 flex flex-col items-center text-center text-[10px]">
+            <div class="text-pink-primary text-xl mb-1">🪪</div>
+            <h4 class="font-bold uppercase text-gray-400">Identification</h4>
+            <p class="mt-2 text-gray-600">My Number Card can be shown upon request.</p>
+        </div>
+
+        <div class="bg-white border border-pink-soft rounded-xl p-4 flex flex-col items-center text-center col-span-2 md:col-span-1">
+            <div class="text-pink-primary text-xl mb-1">🛡️</div>
+            <h4 class="font-bold uppercase text-gray-400 text-[10px]">Safety First</h4>
+            <ul class="text-[9px] text-left mt-2 space-y-1">
+                <li class="flex items-center gap-1"><span class="text-pink-500">✔</span> ID can be shown ([MyNumber Card Redacted])</li>
+                <li class="flex items-center gap-1"><span class="text-pink-500">✔</span> Your safety and peace of mind are my priority.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-8">
+        <div class="flex-1">
+            <h3 class="flex items-center gap-2 text-pink-primary font-bold text-xl mb-6">
+                <span class="text-2xl">♥</span> SERVICES
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border border-pink-soft rounded-2xl p-6 relative overflow-hidden">
+                    <h4 class="text-pink-primary font-bold text-lg mb-4">Housekeeping</h4>
+                    <ul class="text-xs space-y-2 text-gray-600 mb-4">
+                        <li>• Cleaning (kitchen, bathroom, toilet, rooms, etc.)</li>
+                        <li>• <b>Hand washing (Laundry: Not available)</b> If requested, additional charges applies.</li>
+                        <li>• Daily household support</li>
+                    </ul>
+                    <img src="image/housekeeping.webp" alt="Housekeeping" class="w-full h-32 object-cover rounded-xl">
+                </div>
+                <div class="bg-white border border-pink-soft rounded-2xl p-6 relative overflow-hidden">
+                    <h4 class="text-pink-primary font-bold text-lg mb-4">Babysitting</h4>
+                    <ul class="text-xs space-y-2 text-gray-600 mb-4">
+                        <li>• In-home childcare</li>
+                        <li>• Playtime and activities</li>
+                        <li>• Safe and caring supervision</li>
+                    </ul>
+                    <img src="image/babysitting.webp" alt="Babysitting" class="w-full h-32 object-cover rounded-xl">
+                </div>
+            </div>
+            <div class="mt-4 bg-pink-light rounded-full py-2 text-center text-pink-primary font-bold text-xs">
+                ♥ Creating a safe, clean and happy environment for your family.
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/3">
+            <h3 class="flex items-center gap-2 text-gray-400 font-bold text-xl mb-6">
+                <span class="text-pink-400 text-2xl">✖</span> NOT AVAILABLE
+            </h3>
+            <div class="bg-white border border-gray-100 rounded-2xl p-6 h-full relative">
+                <ul class="text-sm space-y-4 text-gray-600 relative z-10 font-bold">
+                    <li class="flex items-center gap-2">• Sick child care</li>
+                    <li class="flex items-center gap-2">• Overnight service</li>
+                </ul>
+                <div class="absolute bottom-4 left-4 right-4 opacity-10">
+                    <svg viewBox="0 0 100 100" class="w-full h-auto text-pink-200" fill="currentColor">
+                        <path d="M10 90 L50 10 L90 90 Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVAILABILITY セクション（変更部分） -->
+    <section class="max-w-5xl mx-auto px-6 py-10">
+        <div class="bg-white border border-pink-soft rounded-2xl p-6">
+            <h4 class="flex items-center gap-2 font-bold mb-4 text-xl">📅 AVAILABILITY</h4>
+            
+            <!-- スケジュール埋め込みエリア -->
+            <div class="schedule-embed-wrapper my-4">
+              <iframe 
+                src="https://script.google.com/macros/s/AKfycbw74PStJzgsr4dtvWFK_HU_j4Ffns1I8eIYObMGBiqg8npk2-UN-dQJsIRhvQoPRwur/exec" 
+                class="schedule-iframe"
+                title="Schedule & Availability"
+                loading="lazy"
+                frameborder="0">
+              </iframe>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-white border border-pink-soft rounded-2xl p-6">
+                    <h4 class="flex items-center gap-2 font-bold mb-4">📍 SERVICE AREA DETAILS</h4>
+                    <p class="text-xs text-gray-600 mb-2 leading-relaxed">Serving areas along the Tobu Tojo Line, Yurakucho Line, and Fukutoshin Line. <br> (Within 60 minutes from Kawagoe)</p>
+                    <img src="image/train.webp" alt="train icon" class="h-8 ml-auto">
+                </div>
+                <div class="bg-white border border-pink-soft rounded-2xl p-6">
+                    <h4 class="flex items-center gap-2 font-bold mb-4">♥ WHY CHOOSE ME?</h4>
+                    <ul class="text-[10px] space-y-1 text-gray-600 font-bold">
+                        <li><span class="text-pink-500">✔</span> 3 years of experience with a major home service company</li>
+                        <li><span class="text-pink-500">✔</span> Featured in the company newsletter</li>
+                        <li><span class="text-pink-500">✔</span> 2nd year as an independent provider</li>
+                        <li><span class="text-pink-500">✔</span> English communication available</li>
+                        <li><span class="text-pink-500">✔</span> Honest, reliable and detail-oriented</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-10">
+        <div class="bg-white rounded-3xl p-8 border border-pink-soft shadow-xl flex flex-col md:flex-row items-center gap-8">
+            <div class="flex items-center gap-4 flex-1">
+                <img src="image/logo.webp" alt="logo" class="w-20 h-20 object-contain">
+                <div>
+                    <h3 class="text-2xl font-bold leading-tight">Let's make your daily life easier!</h3>
+                    <p class="text-gray-500 text-sm mt-1">Feel free to contact me for more information or to check availability.</p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                <a href="#" class="flex items-center justify-center gap-2 bg-[#06C755] text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
+                    <span class="bg-white text-[#06C755] text-[10px] px-2 py-0.5 rounded leading-none">LINE</span>
+                    Chat on LINE <br> <span class="text-[10px] font-normal leading-none">(Quick Response!)</span>
+                </a>
+                <a href="#" class="flex items-center justify-center gap-2 bg-pink-gradient text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Send an Email Inquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-6 pt-10 pb-4 border-t border-gray-100">
+        <div class="grid md:grid-cols-4 gap-8 mb-10">
+            <div class="col-span-1">
+                <h4 class="text-pink-primary font-bold text-xl leading-none">minamimama</h4>
+                <p class="text-gray-400 text-lg">Cleaning Service ✨</p>
+                <p class="text-[10px] text-gray-500 mt-2">Housekeeping & Babysitting</p>
+            </div>
+            <div class="col-span-2 grid grid-cols-2 text-[10px] text-gray-500 font-bold uppercase gap-4">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-pink-400">📍</span>
+                        <div>
+                            <p class="text-gray-300">Location</p>
+                            <p>Kawagoe City, Saitama, Japan</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-pink-400">🏡</span>
+                        <div>
+                            <p class="text-gray-300">Services</p>
+                            <p>Housekeeping / Babysitting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-pink-400">📍</span>
+                        <div>
+                            <p class="text-gray-300">Service Area</p>
+                            <p>Within 60 minutes from Kawagoe <br> (Tobu Tojo Line, Yurakucho Line, Fukutoshin Line area)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-pink-400">💰</span>
+                        <div>
+                            <p class="text-gray-300">Rate</p>
+                            <p>¥3,000 per hour + transportation fee (Minimum 3 hours)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 flex justify-end items-center">
+                <div class="border-2 border-pink-100 rounded-full w-24 h-24 flex flex-col items-center justify-center text-[10px] text-pink-500 text-center p-2">
+                    Your trust is my priority. <span class="text-pink-300 italic block mt-1">♥</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[9px] text-gray-300 uppercase tracking-widest">
+            © minamimama Cleaning Service
+        </div>
+    </footer>
+
+</body>
+</html>
